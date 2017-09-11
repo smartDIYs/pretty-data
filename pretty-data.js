@@ -51,11 +51,9 @@
 function pp() {
 	this.shift = ['\n']; // array of shifts
 	this.step = '  '; // 2 spaces
-	var maxdeep = 100, // nesting level
-      ix = 0;
 
 	// initialize array with shifts //
-	for(ix=0;ix<maxdeep;ix++){
+	for(var ix=0;ix<100;ix++){
 		this.shift.push(this.shift[ix]+this.step); 
 	}
 
